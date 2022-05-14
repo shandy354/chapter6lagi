@@ -1,0 +1,32 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "shandy313",
+    "database": "db_challenge",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "root",
+    "database": "db_challenge",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "url":"postgres://idwpsnpzsvaihj:e986141d4bf10ec7baf479444140c107ee82e8495f61e94c681b61111975842d@ec2-44-196-223-128.compute-1.amazonaws.com:5432/ddbk17jqd62elm",
+    "username": "idwpsnpzsvaihj",
+    "password": "e986141d4bf10ec7baf479444140c107ee82e8495f61e94c681b61111975842d",
+    "database": "ddbk17jqd62elm",
+    "host": "ec2-44-196-223-128.compute-1.amazonaws.com",
+    "port":"5432",
+    "dialect": "postgres",
+    "dialectOptions":{
+      "ssl":{
+        "require":true,
+        "rejectUnauthorized":false
+      }
+  }
+  }
+  }
+
