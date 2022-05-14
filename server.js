@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 
 
 app.use('/docs',swaggerUI.serve, swaggerUI.setup(require('./swagger.json')))
-const port = process.env.PORT || 3001;
+// const port = process.env.PORT || 3001;
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -44,6 +44,9 @@ app.use('/route',routes);
 app.use('/', router);
 
 
-app.listen(port,()=> console.log(`server running on port ${port}`))
+// app.listen(port,()=> console.log(`server running on port ${port}`))
+app.listen(process.env.PORT || 3001, () => {
+    console.log('server running on port',proces.env.PORT);
+});
 
 module.exports = app;
