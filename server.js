@@ -29,14 +29,12 @@ app.set('view engine', 'ejs');
 app.use('/static',express.static(path.join(__dirname,'public')));
 app.use('/assets',express.static(path.join(__dirname,'public/assets')))
 
-// app.use(session({
-//     secret:uuid(),
-//     resalve: false,
-//     saveUninitialized:true
-// }));
-// app.get("/",(req, res)=>{
-//     res.json({message:" wolcome"});
-// });
+app.use(session({
+    secret:uuid(),
+    resalve: false,
+    saveUninitialized:false
+}));
+
 
 // routes index
 // app.get('/',(req, res) => {
