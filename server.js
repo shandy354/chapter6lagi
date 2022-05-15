@@ -46,7 +46,7 @@ app.use('/', router);
 
 // app.listen(port,()=> console.log(`server running on port ${port}`))
 app.listen(process.env.PORT || 3001, () => {
-    console.log('server running on port',proces.env.PORT);
+    console.log('server running on port', process.env.PORT);
 });
 
 module.exports = app;
