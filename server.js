@@ -30,7 +30,7 @@ app.use('/static',express.static(path.join(__dirname,'public')));
 app.use('/assets',express.static(path.join(__dirname,'public/assets')))
 
 app.use(session({
-    secret:uuid(),
+    secret: "busro",
     resalve: false,
     saveUninitialized:false
 }));
