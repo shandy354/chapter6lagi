@@ -24,6 +24,7 @@ module.exports = {
       });
     }
   },
+  
 
   getId: async (req, res) => {
     try {
@@ -44,8 +45,8 @@ module.exports = {
         });
       }
     } catch (error) {
-      res.status(500).json({
-        message: error.message,
+      res.status(404).json({
+        message: "tidak ada data",
       });
     }
   },

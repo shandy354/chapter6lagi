@@ -41,7 +41,7 @@ app.use(session({
 //     res.render('login');
 // });
 app.use('/route',routes);
-app.use('/', router);
+app.use('/api', router);
 
 
 // app.listen(port,()=> console.log(`server running on port ${port}`))
